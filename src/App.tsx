@@ -4,20 +4,21 @@ import Home from 'features/home'
 import * as React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import PrivateRoute from 'routes/private-route'
+import './assets/_scss/styles.scss'
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route
+      {/* <Route path="/login" element={<Login />} /> */}
+      {/* <Route
         path="/dashboard"
         element={
           <PrivateRoute>
             <Dashboard />
           </PrivateRoute>
         }
-      />
+      /> */}
     </Routes>
   )
 }
